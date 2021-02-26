@@ -7,7 +7,7 @@ class SegmentTree {
 		Node () : val(0) {}
 	};
 	int N;
-	std::vector<Node> a;
+	std::vector<T> a;
 	std::vector<Node> tr;
 	Node neutral;
 	inline Node join(const Node &a, const Node &b) {
@@ -42,11 +42,11 @@ class SegmentTree {
 	}
 public:
 	SegmentTree (int n) : N(n) {
-		tr.assign(4*(N+1), 0);
+		tr.assign(4*N, 0);
 		a.assign(N+1, 0);
 	}
 	void build(T *v) {
-		a = std::vector<T>(v+1, v+1+N);
+		a = std::vector<T>(v, v+N+1);
 		build(1, 1, N);
 	}
 	T query(int l, int r) {
