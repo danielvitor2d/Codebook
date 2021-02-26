@@ -8,6 +8,10 @@ Some of codes are implemented by me, the mos part in C++.
 
 [Link](https://github.com/danielvitor2d/Codebook/docs/My_Codebook.pdf) to PDF Version 
 
+#### References
+
+[E-Maxx Algorithms](http://cp-algorithms.com/)
+
 ## Contents
 
 ### Data Structures
