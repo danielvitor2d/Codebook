@@ -1,6 +1,8 @@
 # Codebook
 
-Data structure and algorithm for International Collegiate Programming Contest (ICPC).
+Data structures and algorithms for International Collegiate Programming Contest (ICPC) and other contests about competitive programming.
+
+Some of codes are implemented by me, the mos part in C++.
 
 #### PDF Version
 
