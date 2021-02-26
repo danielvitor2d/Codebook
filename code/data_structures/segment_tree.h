@@ -40,6 +40,28 @@ class SegmentTree {
 		return join(query(lc, l, mid, ql, std::min(qr, mid)), 
 			        query(lc+1, mid+1, r, std::max(mid+1, ql), qr));
 	}
+	// Searching for the first element greater than a given amount (segtree of max)
+	int get_first(int node, int l, int r, int ql, int qr, T x) {
+		if (r < l or qr < l or r < ql) return -1;
+		if (ql <= l and r <= qr) {
+			if (tr[node] <= x) return -1;
+			while (l != r) {
+				int mid = l+(r-l)/2, lc = (node << 1);
+				if (tr[lc] > x) {
+					node = lc;
+					r = mid;
+				} else {
+					node = lc+1;
+					l = mid+1;
+				}
+			}
+			return l;
+		}
+		int mid = l+(r-l)/2, lc = (node << 1);
+		int rs = get_first(lc, l, mid, ql, std::min(qr, mid), x);
+		if (~rs) return rs;
+		return get_first(lc+1, mid+1, r, std::max(ql, mid+1), qr, x);
+	}
 public:
 	template<class MyIterator>
 	SegmentTree (MyIterator begin, MyIterator end) {
