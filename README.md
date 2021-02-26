@@ -8,6 +8,11 @@ Some of codes are implemented by me, the mos part in C++.
 
 [Link](https://github.com/danielvitor2d/Codebook/blob/main/docs/My_Codebook.pdf) to PDF Version 
 
+#### References
+
+- [E-Maxx Algorithms](http://cp-algorithms.com/)
+- [Geeks for Geeks](https://www.geeksforgeeks.org/)
+
 ## Contents
 
 ### Data Structures
@@ -66,8 +71,3 @@ Some of codes are implemented by me, the mos part in C++.
 - [Longest Increasing Subsequence (LIS)](https://github.com/danielvitor2d/Codebook/blob/main/code/miscellaneous/lis.h)
 - [Mo's Algorithm](https://github.com/danielvitor2d/Codebook/blob/main/code/miscellaneous/mo_algorithm.h)
 - [Ternary Search](https://github.com/danielvitor2d/Codebook/blob/main/code/miscellaneous/ternary_search.h)
-
-#### References
-
-- [E-Maxx Algorithms](http://cp-algorithms.com/)
-- [Geeks for Geeks](https://www.geeksforgeeks.org/)
