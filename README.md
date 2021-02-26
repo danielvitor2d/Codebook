@@ -10,8 +10,8 @@ Some of codes are implemented by me, the mos part in C++.
 
 #### References
 
-[E-Maxx Algorithms](http://cp-algorithms.com/)
-[Geeks for Geeks](https://www.geeksforgeeks.org/)
+- [E-Maxx Algorithms](http://cp-algorithms.com/)
+- [Geeks for Geeks](https://www.geeksforgeeks.org/)
 
 ## Contents
 
