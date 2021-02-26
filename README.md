@@ -59,3 +59,8 @@ Data structure and algorithm for International Collegiate Programming Contest (I
 - [Aho Corasick](https://github.com/danielvitor2d/Codebook/blob/main/code/strings/aho_corasick.h)
 - [Suffix Array](https://github.com/danielvitor2d/Codebook/blob/main/code/strings/suffix_array.h)
 
+### Miscellaneous
+
+- [Longest Increasing Subsequence](https://github.com/danielvitor2d/Codebook/blob/main/code/miscellaneous/lis.h)
+- [Mo's Algorithm](https://github.com/danielvitor2d/Codebook/blob/main/code/miscellaneous/mo_algorithm.h)
+- [Ternary Search](https://github.com/danielvitor2d/Codebook/blob/main/code/miscellaneous/ternary_search.h)
