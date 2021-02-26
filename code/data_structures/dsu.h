@@ -1,6 +1,5 @@
 #include <vector>
 #include <numeric>
-
 class DSU {
 	int N;
 	std::vector<int> link, sz;

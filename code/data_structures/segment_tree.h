@@ -44,10 +44,10 @@ class SegmentTree {
 	int get_first(int node, int l, int r, int ql, int qr, T x) {
 		if (r < l or qr < l or r < ql) return -1;
 		if (ql <= l and r <= qr) {
-			if (tr[node] <= x) return -1;
+			if (tr[node].val <= x) return -1;
 			while (l != r) {
 				int mid = l+(r-l)/2, lc = (node << 1);
-				if (tr[lc] > x) {
+				if (tr[lc].val > x) {
 					node = lc;
 					r = mid;
 				} else {

@@ -1,5 +1,4 @@
 #include <vector>
-
 template<class T>
 class FenwickTree {
 	int N;
