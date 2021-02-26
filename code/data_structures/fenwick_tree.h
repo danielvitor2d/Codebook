@@ -1,45 +1,32 @@
-#include <bits/stdc++.h>
-using namespace std;
+#include <vector>
 
-const int maxn = 1e5+5;
-
-namespace FenwickTree {
-
-	int tree[maxn], a[maxn];
-	int n;
-
-	void build(int _n) {
-		n = _n;
-		for (int i = 0; i < maxn; ++i) {
-			tree[i] = 0;
-		}
-	}
-
-	void updateI(int idx, int x) {   //increment a[idx] by x
+template<class T>
+class FenwickTree {
+	int N;
+	std::vector<T> tr, a;
+public:
+	void add(int idx, T x){
 		a[idx] = x;
-		for (; idx <= n; idx += (idx & -idx)) {
-			tree[idx] += x;
-		}
+		for (; idx <= N; idx += (idx & -idx))
+			tr[idx] += x;
 	}
-
-	void updateS(int idx, int x) {   //set a[idx] = x
-		int delta = x - a[idx];
+	void set(int idx, T x){
+		T delta = x-a[idx];
 		a[idx] = x;
-		for (; idx <= n; idx += (idx & -idx)) {
-			tree[idx] += delta;
-		}
+		for (; idx <= N; idx += (idx & -idx))
+			tr[idx] += delta;
 	}
-
-	int query(int idx) {            //return sum of a[1..idx]
-		int rs = 0;
-		for (; idx > 0; idx -= (idx & -idx)) {
-			rs += tree[idx];
-		}
-		return rs;
+	T query(int idx){
+		T res = 0;
+		for (; idx > 0; idx -= (idx & -idx))
+			res += tr[idx];
+		return res;
 	}
-
-	int query(int l, int r) {       //return sum of a[l..r]
-		return query(r) - query(l - 1);
+	T query(int l, int r){
+		return query(r)-query(l-1);
 	}
-
+	FenwickTree(int n) : N(n) {
+		tr.resize(N+1, 0);
+		a.resize(N+1, 0);
+	}
 };
