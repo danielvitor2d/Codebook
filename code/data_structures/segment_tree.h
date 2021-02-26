@@ -38,16 +38,19 @@ class SegmentTree {
 		if (ql <= l and r <= qr) return tr[node];
 		int mid = l+(r-l)/2, lc = (node << 1);
 		return join(query(lc, l, mid, ql, std::min(qr, mid)), 
-			        query(lc+1, mid+1, r, std::max(ql, mid+1), qr));
+			        query(lc+1, mid+1, r, std::max(mid+1, ql), qr));
 	}
 public:
+	template<class MyIterator>
+	SegmentTree (MyIterator begin, MyIterator end) {
+		N = end-begin-1;
+		tr.assign(4*N, 0);
+		a = std::vector<T>(begin, end);
+		build(1, 1, N);
+	}
 	SegmentTree (int n) : N(n) {
 		tr.assign(4*N, 0);
 		a.assign(N+1, 0);
-	}
-	void build(T *v) {
-		a = std::vector<T>(v, v+N+1);
-		build(1, 1, N);
 	}
 	T query(int l, int r) {
 		return query(1, 1, N, l, r).val;

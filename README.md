@@ -19,7 +19,6 @@ Some of codes are implemented by me, the mos part in C++.
 
 - Segment Tree
     - [Segment Tree (Standard)](https://github.com/danielvitor2d/Codebook/blob/main/code/data_structures/segment_tree.h)
-    - [Segment Tree Kadane](https://github.com/danielvitor2d/Codebook/blob/main/code/data_structures/segment_tree_kadane.h)
     - [Segment Tree Lazy Propagation](https://github.com/danielvitor2d/Codebook/blob/main/code/data_structures/segment_tree_lazy.h)
     - [Merge Sort Tree](https://github.com/danielvitor2d/Codebook/blob/main/code/data_structures/merge_sort_tree.h)
 - Fenwick Tree
