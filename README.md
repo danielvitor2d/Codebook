@@ -64,6 +64,7 @@ Some of codes are implemented by me, the mos part in C++.
 - [Trie of Int](https://github.com/danielvitor2d/Codebook/blob/main/code/strings/trie_int.h)
 - [Aho Corasick](https://github.com/danielvitor2d/Codebook/blob/main/code/strings/aho_corasick.h)
 - [Suffix Array](https://github.com/danielvitor2d/Codebook/blob/main/code/strings/suffix_array.h)
+- [Lyndon Factorization](https://github.com/danielvitor2d/Codebook/blob/main/code/strings/lyndon_factorization.h)
 
 ### Miscellaneous
 
