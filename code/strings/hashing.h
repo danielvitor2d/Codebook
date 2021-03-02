@@ -11,7 +11,7 @@ using namespace std;
 struct StringHashing {
 	const uint64_t MOD = (1LL<<61)-1;
 	const int base = 31;
-	uint64_t modMul(uint64_t a, uint64_t b){
+	uint64_t modMul(uint64_t a, uint64_t b) {
 		uint64_t l1 = (uint32_t)a, h1 = a>>32, l2 = (uint32_t)b, h2 = b>>32;
 		uint64_t l = l1*l2, m = l1*h2 + l2*h1, h = h1*h2;
 		uint64_t ret = (l&MOD) + (l>>61) + (h << 3) + (m >> 29) + ((m << 35) >> 3) + 1;
@@ -51,7 +51,7 @@ struct StringHashingDoubleMod {
 	const uint64_t MOD1 = 1e6+3;
 	const uint64_t MOD2 = 1e8+7;
 	const int base = 31;
-	uint64_t modMul(uint64_t a, uint64_t b){
+	uint64_t modMul(uint64_t a, uint64_t b, const uint64_t &MOD) {
 		uint64_t l1 = (uint32_t)a, h1 = a>>32, l2 = (uint32_t)b, h2 = b>>32;
 		uint64_t l = l1*l2, m = l1*h2 + l2*h1, h = h1*h2;
 		uint64_t ret = (l&MOD) + (l>>61) + (h << 3) + (m >> 29) + ((m << 35) >> 3) + 1;
@@ -63,7 +63,7 @@ struct StringHashingDoubleMod {
 		return (c-'a'+1);
 	}
 	vector<uint64_t> h1, h2, p1, p2;
-	StringHashing (const string &s) {
+	StringHashingDoubleMod (const string &s) {
 		int n = s.size();
 		h1.resize(n); h2.resize(n); p1.resize(n); p2.resize(n);
 		p1[0] = 1;

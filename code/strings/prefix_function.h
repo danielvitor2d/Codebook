@@ -49,7 +49,7 @@ vector<int> prefix_occurrences(const string &s) {
 	return ans;
 }
 
-inline int getInt(char c) {
+inline int getId(char c) {
 	return c-'a';
 }
 
@@ -60,7 +60,7 @@ struct autKMP {
 	vector<vector<int>> nxt;
 	autKMP (const string &s) : nxt(26, vector<int>(s.size()+1)) {
 		vector<int> p = prefix_function(s);
-		nxt[getId(d[0])][0] = 1;
+		nxt[getId(s[0])][0] = 1;
 		for (char c = 0; c < 26; ++c) {
 			for (int i = 1; i <= (int)s.size(); ++i) {
 				nxt[c][i] = (getId(s[i-1]) == c ? i+1 : nxt[c][p[i-1]]);
