@@ -40,6 +40,7 @@ Some of codes are implemented by me, the mos part in C++.
 - [Heavy-Light Decomposition - Edges](https://github.com/danielvitor2d/Codebook/blob/main/code/graphs/hld_edges.h)
 - [Heavy-Light Decomposition - Nodes](https://github.com/danielvitor2d/Codebook/blob/main/code/graphs/hld_nodes.h)
 - [Strongly Connected Component](https://github.com/danielvitor2d/Codebook/blob/main/code/graphs/strongly_connected_component.h)
+- [Maximum Flow](https://github.com/danielvitor2d/Codebook/blob/main/code/graphs/maximum_flow.h)
 
 ### Math
 
