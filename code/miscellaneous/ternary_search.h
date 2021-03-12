@@ -1,13 +1,13 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-#define ftype long double;
+#define ftype long double
 #define f(x) x
 
 const int inf = 0x3f3f3f3f;
 
 void ternary_search_of_min(ftype top) {
-	ftype lo = 0.0, hi = top;
+	ftype lo = 0.0, hi = top, m1, m2, ans;
 	for (int i = 0; i < 100; ++i) {
 		m1 = (lo * 2 + hi) / 3.0;
 		m2 = (lo + 2 * hi) / 3.0;
@@ -23,7 +23,7 @@ void ternary_search_of_min(ftype top) {
 }
 
 void ternary_search_of_max(ftype top) {
-	ftype lo = 0.0, hi = top;
+	ftype lo = 0.0, hi = top, m1, m2, ans;
 	for (int i = 0; i < 100; ++i) {
 		m1 = (lo * 2 + hi) / 3.0;
 		m2 = (lo + 2 * hi) / 3.0;
@@ -39,7 +39,7 @@ void ternary_search_of_max(ftype top) {
 }
 
 void ternary_seach_of_min_on_integers(int top) {
-	int lo = 0, hi = top, ans = inf;
+	int lo = 0, hi = top, ans = inf, m1, m2;
 	while (hi - lo > 4) {
 		int m1 = (lo + hi) / 2;
 		int m2 = m1 + 1;
@@ -55,7 +55,7 @@ void ternary_seach_of_min_on_integers(int top) {
 }
 
 void ternary_seach_of_max_on_integers(int top) {
-	int lo = 0, hi = top, ans = -inf;
+	int lo = 0, hi = top, ans = -inf, m1, m2;
 	while (hi - lo > 4) {
 		int m1 = (lo + hi) / 2;
 		int m2 = m1 + 1;

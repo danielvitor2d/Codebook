@@ -2,7 +2,7 @@
 
 Data structures and algorithms for International Collegiate Programming Contest (ICPC) and other contests about competitive programming.
 
-Some of codes are implemented by me, the mos part in C++.
+Some of codes are implemented by me, the most part in C++.
 
 #### PDF Version
 
@@ -26,7 +26,6 @@ Some of codes are implemented by me, the mos part in C++.
     - [Fenwick Tree](https://github.com/danielvitor2d/Codebook/blob/main/code/data_structures/fenwick_tree.h)
 - [Disjoint Set Union](https://github.com/danielvitor2d/Codebook/blob/main/code/data_structures/dsu.h)
 - [Sparse Table](https://github.com/danielvitor2d/Codebook/blob/main/code/data_structures/sparse_table.h)
-
 
 ### Dynamic Programming
 
@@ -65,7 +64,7 @@ Some of codes are implemented by me, the mos part in C++.
 - [Z Function](https://github.com/danielvitor2d/Codebook/blob/main/code/strings/z_function.h)
 - [String Hashing](https://github.com/danielvitor2d/Codebook/blob/main/code/strings/hashing.h)
 - [Trie](https://github.com/danielvitor2d/Codebook/blob/main/code/strings/trie.h)
-- [Trie of Int](https://github.com/danielvitor2d/Codebook/blob/main/code/strings/trie_int.h)
+- [Trie Int](https://github.com/danielvitor2d/Codebook/blob/main/code/strings/trie_int.h)
 - [Aho Corasick](https://github.com/danielvitor2d/Codebook/blob/main/code/strings/aho_corasick.h)
 - [Suffix Array](https://github.com/danielvitor2d/Codebook/blob/main/code/strings/suffix_array.h)
 - [Manacher](https://github.com/danielvitor2d/Codebook/blob/main/code/strings/manacher.h)
@@ -73,6 +72,7 @@ Some of codes are implemented by me, the mos part in C++.
 
 ### Miscellaneous
 
+- [Ternary Search](https://github.com/danielvitor2d/Codebook/blob/main/code/miscellaneous/ternary_search.h)
 - [Longest Increasing Subsequence (LIS)](https://github.com/danielvitor2d/Codebook/blob/main/code/miscellaneous/lis.h)
 - [Mo's Algorithm](https://github.com/danielvitor2d/Codebook/blob/main/code/miscellaneous/mo_algorithm.h)
-- [Ternary Search](https://github.com/danielvitor2d/Codebook/blob/main/code/miscellaneous/ternary_search.h)
+- [Inversions Count](https://github.com/danielvitor2d/Codebook/blob/main/code/miscellaneous/inversions_count.h)
