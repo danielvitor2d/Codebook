@@ -33,9 +33,9 @@ Some of codes are implemented by me, the most part in C++.
 
 ### Graph's Algoritms
 
-- [Cutpoints](https://github.com/danielvitor2d/Codebook/blob/main/code/graphs/articulation_point.h)
 - [Bridges](https://github.com/danielvitor2d/Codebook/blob/main/code/graphs/bridges.h)
-- [Kosaraju](https://github.com/danielvitor2d/Codebook/blob/main/code/graphs/strongly_connected_component.h)
+- [Cutpoints](https://github.com/danielvitor2d/Codebook/blob/main/code/graphs/cutpoints.h)
+- [Kosaraju](https://github.com/danielvitor2d/Codebook/blob/main/code/graphs/kosaraju.h)
 - [LCA with Binary Lifting](https://github.com/danielvitor2d/Codebook/blob/main/code/graphs/lca.h)
 - [Heavy-Light Decomposition - Edges](https://github.com/danielvitor2d/Codebook/blob/main/code/graphs/hld_edges.h)
 - [Heavy-Light Decomposition - Nodes](https://github.com/danielvitor2d/Codebook/blob/main/code/graphs/hld_nodes.h)
