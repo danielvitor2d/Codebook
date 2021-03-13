@@ -1,10 +1,7 @@
-#include <bits/stdc++.h>
-using namespace std;
-
-const int maxn = 1e5+5;
-
-vector<int> gr[maxn];
-int used[maxn], tin[maxn], low[maxn];
+#include <vector>
+const int MAXN = 1e5+5;
+std::vector<int> gr[MAXN];
+int used[MAXN], tin[MAXN], low[MAXN];
 int n, timer;
 
 void is_cutpoint(int u) {
@@ -17,10 +14,10 @@ void dfs(int u, int p = -1) {
 	int children = 0;
 	for (int to : gr[u]) if (to != p) {
 		if (used[to]) { //Is a back edge
-			low[u] = min(low[u], tin[to]);
+			low[u] = std::min(low[u], tin[to]);
 		} else {
 			dfs(to, u);
-			low[u] = min(low[u], low[to]);
+			low[u] = std::min(low[u], low[to]);
 			if (low[to] >= tin[u] and p != -1) {
 				is_cutpoint(u);
 			}

@@ -1,12 +1,9 @@
-#include <bits/stdc++.h>
-using namespace std;
-
-const int maxn = 1e5+5;
-
+#include <vector>
+const int MAXN = 1e5+5;
 namespace SCC {
-	vector<int> gr[maxn], gt[maxn];
-	vector<int> order;
-	int comp[maxn], used[maxn];
+	std::vector<int> gr[MAXN], gt[MAXN];
+	std::vector<int> order;
+	int comp[MAXN], used[MAXN];
 	int n, timer, scc;
 
 	void init(int _n) {
@@ -23,7 +20,7 @@ namespace SCC {
 
 	void addEdge(int u, int v) {
 		gr[u].push_back(v);
-		gt[v].push_back(u);
+		// gt[v].push_back(u);
 	}
 
 	void dfs1(int u) {
@@ -44,15 +41,19 @@ namespace SCC {
 
 	int get_scc() {
 		++timer;
-		for (int u = 0; u < n; ++u)
-			if (used[u] != timer) dfs1(u);
+		for (int u = 0; u < n; ++u) {
+			if (used[u] != timer) {
+				dfs1(u);
+			}
+		}
 
 		++timer;
-		for (int i = n-1; i >= 0; --i)
+		for (int i = n-1; i >= 0; --i) {
 			if (used[order[i]] != timer) {
 				dfs2(order[i]);
 				++scc;
 			}
+		}
 		return scc;
 	}
 };
