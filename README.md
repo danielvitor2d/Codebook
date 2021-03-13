@@ -25,6 +25,8 @@ Some of codes are implemented by me, the most part in C++.
 - Fenwick Tree
     - [Fenwick Tree](https://github.com/danielvitor2d/Codebook/blob/main/code/data_structures/fenwick_tree.h)
 - [Disjoint Set Union](https://github.com/danielvitor2d/Codebook/blob/main/code/data_structures/dsu.h)
+- [Query Queue](https://github.com/danielvitor2d/Codebook/blob/main/code/data_structures/query_queue.h)
+- [Query Stack](https://github.com/danielvitor2d/Codebook/blob/main/code/data_structures/query_stack.h)
 - [Sparse Table](https://github.com/danielvitor2d/Codebook/blob/main/code/data_structures/sparse_table.h)
 
 ### Dynamic Programming
