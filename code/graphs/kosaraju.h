@@ -20,7 +20,7 @@ namespace SCC {
 
 	void addEdge(int u, int v) {
 		gr[u].push_back(v);
-		// gt[v].push_back(u);
+		gt[v].push_back(u);
 	}
 
 	void dfs1(int u) {
