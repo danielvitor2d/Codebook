@@ -39,8 +39,11 @@ Some of codes are implemented by me, the most part in C++.
 - [Cutpoints](https://github.com/danielvitor2d/Codebook/blob/main/code/graphs/cutpoints.h)
 - [Kosaraju](https://github.com/danielvitor2d/Codebook/blob/main/code/graphs/kosaraju.h)
 - [LCA with Binary Lifting](https://github.com/danielvitor2d/Codebook/blob/main/code/graphs/lca.h)
+- [Euler Tour](https://github.com/danielvitor2d/Codebook/blob/main/code/graphs/euler_tour.h)
+- [Eulerian Path](https://github.com/danielvitor2d/Codebook/blob/main/code/graphs/eulerian_path.h)
 - [Heavy-Light Decomposition - Edges](https://github.com/danielvitor2d/Codebook/blob/main/code/graphs/hld_edges.h)
 - [Heavy-Light Decomposition - Nodes](https://github.com/danielvitor2d/Codebook/blob/main/code/graphs/hld_nodes.h)
+- [SPFA](https://github.com/danielvitor2d/Codebook/blob/main/code/graphs/spfa.h)
 - [Maximum Flow](https://github.com/danielvitor2d/Codebook/blob/main/code/graphs/maximum_flow.h)
 
 ### Math
