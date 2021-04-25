@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-#include "math.h"
+#include "basic_math.h"
 
 using namespace std;
 
@@ -24,7 +24,7 @@ bool MillerRabin(uint64_t n) {
 	d >>= s;
 
 	for (uint64_t a : {2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37}) {
-		// int a = 2 + rand() % (n - 3);  (nondeterministic version)
+		// int a = 2 + rand() % (n - 3);  // nondeterministic version
 		if (n == a)
 			return true;
 		if (check_composite(n, a, d, s)) 

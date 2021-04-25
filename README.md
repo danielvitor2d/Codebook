@@ -29,10 +29,6 @@ Some of codes are implemented by me, the most part in C++.
 - [Query Stack](https://github.com/danielvitor2d/Codebook/blob/main/code/data_structures/query_stack.h)
 - [Sparse Table](https://github.com/danielvitor2d/Codebook/blob/main/code/data_structures/sparse_table.h)
 
-### Dynamic Programming
-
-- [PSA PA](https://github.com/danielvitor2d/Codebook/blob/main/code/dynamic_programming/psa.h)
-
 ### Graph's Algoritms
 
 - [Bridges](https://github.com/danielvitor2d/Codebook/blob/main/code/graphs/bridges.h)
@@ -49,13 +45,16 @@ Some of codes are implemented by me, the most part in C++.
 ### Math
 
 - [Basic Math](https://github.com/danielvitor2d/Codebook/blob/main/code/math/basic_math.h)
-- [Fatorial](https://github.com/danielvitor2d/Codebook/blob/main/code/math/fatorial.h)
-- [Prime Number and Factorization](https://github.com/danielvitor2d/Codebook/blob/main/code/math/primes.h)
-- [Matrix Exponentiation](https://github.com/danielvitor2d/Codebook/blob/main/code/math/matrix_exponentiation.h)
-- [Array Permutation](https://github.com/danielvitor2d/Codebook/blob/main/code/math/array_permutation.h)
 - [Modular Arithmetic](https://github.com/danielvitor2d/Codebook/blob/main/code/math/modular.h)
+- [Factorial](https://github.com/danielvitor2d/Codebook/blob/main/code/math/factorial.h)
+- [Prime Number and Factorization](https://github.com/danielvitor2d/Codebook/blob/main/code/math/primes.h)
+- [Matrix](https://github.com/danielvitor2d/Codebook/blob/main/code/math/matrix.h)
+- [Gauss Elimination](https://github.com/danielvitor2d/Codebook/blob/main/code/math/gauss.h)
 - [Extended Euclidean](https://github.com/danielvitor2d/Codebook/blob/main/code/math/extended_euclidean.h)
-- [Geometric Operations](https://github.com/danielvitor2d/Codebook/blob/main/code/math/geometric_operations.h)
+
+### Dynamic Programming
+
+- [PSA PA](https://github.com/danielvitor2d/Codebook/blob/main/code/dynamic_programming/psa.h)
 
 ### Geometry
 

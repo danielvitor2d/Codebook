@@ -8,28 +8,26 @@ inline int64_t modSum(int64_t a, int64_t b) {
     return (a+b >= MOD ? a+b-MOD : a+b);
 }
 inline int64_t modSub(int64_t a, int64_t b) {
-    return (a+b < 0 ? a-b+MOD : a-b);
+    return (a-b < 0 ? a-b+MOD : a-b);
 }
 inline int64_t modMul(int64_t a, int64_t b) {
-    return (a*1LL*b)%MOD;
+    return (a*b)%MOD;
 }
-int64_t inv_mod(int64_t a, int64_t mod = MOD) {
+int64_t inv_mod(int64_t a, int64_t m = MOD) {
 	int64_t x, y;
-    extended_gcd(a, mod, x, y);
-	return (x%mod + mod)%mod;
+  extended_gcd(a, m, x, y);
+	return (x%m + m)%m;
 }
 int64_t modDiv(int64_t a, int64_t b) {
     return modMul(a, inv_mod(b, MOD));
 }
-/*
-    O(log(a))
-*/
+//O(log(a))
 int64_t bigModMul(int64_t a, int64_t b) {
 	int64_t ans = 0LL;
 	b %= MOD;
 	while (a > 0) {
-		if (a & 1) ans = modAdd(ans, b, MOD);
-		b = modMul(b, 2LL, MOD);
+		if (a & 1) ans = modSum(ans, b);
+		b = modMul(b, 2LL);
 		a >>= 1;
 	}
 	return ans;
