@@ -4,22 +4,22 @@ using namespace std;
 
 const int64_t MOD = 1e9+7;
 
-inline int64_t modSum(int64_t a, int64_t b) {
-    return (a+b >= MOD ? a+b-MOD : a+b);
+inline int64_t modSum(int64_t a, int64_t b, int64_t mod = MOD) {
+    return (a+b >= mod ? a+b-mod : a+b);
 }
-inline int64_t modSub(int64_t a, int64_t b) {
-    return (a-b < 0 ? a-b+MOD : a-b);
+inline int64_t modSub(int64_t a, int64_t b, int64_t mod = MOD) {
+    return (a-b < 0 ? a-b+mod : a-b);
 }
-inline int64_t modMul(int64_t a, int64_t b) {
-    return (a*b)%MOD;
+inline int64_t modMul(int64_t a, int64_t b, int64_t mod = MOD) {
+    return (a*b)%mod;
 }
 int64_t inv_mod(int64_t a, int64_t m = MOD) {
-	int64_t x, y;
+    int64_t x, y;
   extended_gcd(a, m, x, y);
-	return (x%m + m)%m;
+    return (x%m + m)%m;
 }
-int64_t modDiv(int64_t a, int64_t b) {
-    return modMul(a, inv_mod(b, MOD));
+int64_t modDiv(int64_t a, int64_t b, int64_t mod = MOD) {
+    return modMul(a, inv_mod(b, mod), mod);
 }
 //O(log(a))
 int64_t bigModMul(int64_t a, int64_t b) {
