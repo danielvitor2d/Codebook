@@ -34,7 +34,7 @@ struct Query {
 vi mo_s_algorithm(vector<Query> queries) {
 	vi answers(queries.size());
 	sort(queries.begin(), queries.end());
-	int l = 0, r = 0;
+	int l = queries[0].l, r = queries[0].l-1;
 	for (Query q : queries) {
 		while (q.l < l) add(--l);
 		while (r < q.r) add(++r);

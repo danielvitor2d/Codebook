@@ -31,8 +31,7 @@ class SegmentTree {
 	void update(int node, int l, int r, int ql, int qr, T x) {
 		if (r < l or qr < l or r < ql) return;
 		if (ql <= l and r <= qr) {
-			int delta = x-tr[node].val;
-			tr[node].val += delta;
+			tr[node].val += x;
 		} else {
 			int mid = l+(r-l)/2, lc = (node << 1);
 			update(lc, l, mid, ql, std::min(qr, mid), x);
