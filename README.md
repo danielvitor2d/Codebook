@@ -24,7 +24,7 @@ Some of codes are implemented by me, the most part in C++.
     - [Merge Sort Tree](https://github.com/danielvitor2d/Codebook/blob/main/code/data_structures/merge_sort_tree.h)
 - Fenwick Tree
     - [Fenwick Tree](https://github.com/danielvitor2d/Codebook/blob/main/code/data_structures/fenwick_tree.h)
-- [Sqrt Decomposition](https://github.com/danielvitor2d/Codebook/blob/main/code/data_structires/sqrt_decomposition.h)
+- [Sqrt Decomposition](https://github.com/danielvitor2d/Codebook/blob/main/code/data_structures/sqrt_decomposition.h)
 - [Disjoint Set Union](https://github.com/danielvitor2d/Codebook/blob/main/code/data_structures/dsu.h)
 - [Query Queue](https://github.com/danielvitor2d/Codebook/blob/main/code/data_structures/query_queue.h)
 - [Query Stack](https://github.com/danielvitor2d/Codebook/blob/main/code/data_structures/query_stack.h)
