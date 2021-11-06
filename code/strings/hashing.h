@@ -2,6 +2,12 @@
 using namespace std;
 
 /*
+Cuidado ao subtrair de unsigned
+Trocar %MOD por += MOD ou -= MOD
+Cuidado com caracteres como #, $, @
+/*
+
+/*
 	Small Primes:
 		31, 53
 	Large Primes:
@@ -33,7 +39,8 @@ struct StringHashing {
 		hs[0] = getInt(s[0]);
 		for (int i = 1; i < n; ++i) {
 			p[i] = modMul(p[i-1], base);
-			hs[i] = (modMul(hs[i-1], base) + getInt(s[i]))%MOD;
+			hs[i] = modMul(hs[i-1], base) + getInt(s[i]);
+			if (hs[i] >= MOD) hs[i] -= MOD;
 		}
 	}
 	/*
@@ -42,7 +49,10 @@ struct StringHashing {
 	uint64_t getValue(int l, int r) {
 		if (l > r) return -1;
 		uint64_t res = hs[r];
-		if (l > 0) res = (res + MOD - modMul(p[r-l+1], hs[l-1]))%MOD;
+		if (l > 0) {
+			res = res + MOD - modMul(p[r-l+1], hs[l-1]);
+			if (res >= MOD) res -= MOD;
+		}
 		return res;
 	}
 };
@@ -73,17 +83,25 @@ struct StringHashingDoubleMod {
 		for (int i = 1; i < n; ++i) {
 			p1[i] = modMul(p1[i-1], base, MOD1);
 			p2[i] = modMul(p2[i-1], base, MOD2);
-			h1[i] = (modMul(h1[i-1], base, MOD1) + getInt(s[i]))%MOD1;
-			h2[i] = (modMul(h2[i-1], base, MOD2) + getInt(s[i]))%MOD2;
+			h1[i] = modMul(h1[i-1], base, MOD1) + getInt(s[i]);
+			if (h1[i] >= MOD1) h1[i] -= MOD1;
+			h2[i] = modMul(h2[i-1], base, MOD2) + getInt(s[i]);
+			if (h2[i] >= MOD2) h2[i] -= MOD2;
 		}
 	}
 	pair<uint64_t, uint64_t> getValue(int l, int r) {
 		if (l > r) return {-1, -1};
 		pair<uint64_t, uint64_t> res;
 		res.first = h1[r];
-		if (l > 0) res.first = (res.first + MOD1 - modMul(p1[r-l+1], h1[l-1], MOD1))%MOD1;
+		if (l > 0) {
+			res.first = res.first + MOD1 - modMul(p1[r-l+1], h1[l-1], MOD1);
+			if (res.first >= MOD1) res.first -= MOD1;
+		}
 		res.second = h2[r];
-		if (l > 0) res.second = (res.second + MOD2 - modMul(p2[r-l+1], h2[l-1], MOD2))%MOD2;
+		if (l > 0) {
+			res.second = res.second + MOD2 - modMul(p2[r-l+1], h2[l-1], MOD2);
+			if (res.second >= MOD2) res.second -= MOD2;
+		}
 		return res;
 	}
 };
