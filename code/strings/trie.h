@@ -48,7 +48,7 @@ namespace Trie {
 		return trie[v].leaf;
 	}
 	/*
-		Get amount of occurentes of prefix s in O(|s|)
+		Get amount of occurrences of prefix s in O(|s|)
 	*/
 	int countPre(const string &s) {
 		int v = 0;
